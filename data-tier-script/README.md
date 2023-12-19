@@ -27,17 +27,17 @@ sudo mysql -->
 sudo mysql < repo/world.sql
 
 # Check script ran correctly
-SHOW DATABASES;
-SHOW TABLES;
+sudo mysql -e 'SHOW DATABASES;'
+sudo mysql -e 'USE world; SHOW TABLES;'
 
 # Allow access to root from anywhere
-CREATE USER 'root'@'%' IDENTIFIED BY 'root';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
-GRANT GRANT OPTION ON *.* TO 'root'@'%';
-FLUSH PRIVILEGES;
+sudo mysql -e "CREATE USER 'root'@'%' IDENTIFIED BY 'root';"
+sudo mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';"
+sudo mysql -e "GRANT GRANT OPTION ON *.* TO 'root'@'%';"
+sudo mysql -e "FLUSH PRIVILEGES;"
 
-# Exit SQL
-exit
+<!-- # Exit SQL
+exit -->
 
 # Restart MYSQL
 sudo systemctl restart mysql
