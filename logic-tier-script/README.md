@@ -120,10 +120,10 @@ echo "Done!"
 echo ""
 
 # Create enviroment variables
-export DB_HOST=jdbc:mysql://172.31.41.180:3306/world
+export DB_HOST=jdbc:mysql://172.31.47.21:3306/world
 export DB_USER=root
 export DB_PASS=root
-export DB_IP=172.31.41.180
+export DB_IP=172.31.47.21
 export MYSQL_PWD=root
 
 # Conditional to check can connect to database
