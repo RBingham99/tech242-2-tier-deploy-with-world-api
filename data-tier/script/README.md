@@ -1,3 +1,4 @@
+```
 #!/bin/bash
 
 # Update
@@ -77,3 +78,4 @@ echo "Restart MYSQL..."
 sudo systemctl restart mysql
 echo "Done!"
 echo ""
+```

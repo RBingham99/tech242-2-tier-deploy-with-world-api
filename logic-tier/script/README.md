@@ -1,3 +1,4 @@
+```
 #!/bin/bash
 
 # Update
@@ -120,10 +121,10 @@ echo "Done!"
 echo ""
 
 # Create enviroment variables
-export DB_HOST=jdbc:mysql://172.31.47.21:3306/world
+export DB_HOST=jdbc:mysql://172.31.38.134:3306/world
 export DB_USER=root
 export DB_PASS=root
-export DB_IP=172.31.47.21
+export DB_IP=172.31.38.134
 export MYSQL_PWD=root
 
 # Conditional to check can connect to database
@@ -144,3 +145,4 @@ if mysql -u"$DB_USER" -h"$DB_IP" -e "use world"; then
 else
     echo "Error: Unable to connect to MySQL database."
 fi
+```
