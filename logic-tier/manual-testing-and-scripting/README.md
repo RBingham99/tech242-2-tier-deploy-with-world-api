@@ -5,7 +5,7 @@ Similarly to the data tier the manual testing for the logic tier started quite e
 
 I did run into an issue when trying to run the application but with some help from my team we discovered the commands `mvn clean` and `mvn install`, which allowed my app to run when I used the `mvn spring-boot:start` command.
 
-I then moved on to using enviroment variables, which were not hard to create, but it caused issues running my app until my team told me that I needed to put `-E` at the beginning of my start command to pass the enviroment variables to my app.
+I then moved on to using enviroment variables, which were not hard to create, but it caused issues running my app until my team told me that I needed to put `-E` at the beginning of my start command to pass the enviroment variables to my app. However it did take quite a while for my team and I to work that out, which made this the worst blocker of the project for me.
 
 One thing I found particularly useful when manually testing the logic tier was to install MYSQL so I could manually check the database connection.
 
